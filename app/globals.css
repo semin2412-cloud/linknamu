@@ -28,8 +28,7 @@ body {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  object-fit: cover;
-  background: #f3d9c3;
+  background: #fff;
   border: 4px solid rgba(255, 255, 255, 0.85);
   box-shadow:
     0 12px 28px rgba(190, 110, 60, 0.22),

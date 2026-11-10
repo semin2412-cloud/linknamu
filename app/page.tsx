@@ -24,12 +24,7 @@ const links = [
 export default function Home() {
   return (
     <main className="container">
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        className="profile"
-        src="/profile.jpg"
-        alt="장세민 프로필 사진"
-      />
+      <div className="profile" role="img" aria-label="장세민 프로필 사진" />
       <div className="intro">
         <p className="name">장세민</p>
         <p className="bio">풀스택 개발자 | 요즘에는 AI 개발에 관심이 많아요</p>
