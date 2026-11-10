@@ -8,15 +8,17 @@ body {
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  background: #f5f5f5;
-  color: #222;
-  font-family: "Pretendard", "Malgun Gothic", sans-serif;
+  background: linear-gradient(160deg, #fff8ee 0%, #ffe9d6 55%, #ffd9bf 100%)
+    fixed;
+  color: #3a2e28;
+  font-family: "Pretendard", -apple-system, "Malgun Gothic", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 .container {
   width: 100%;
-  max-width: 420px;
-  padding: 48px 20px;
+  max-width: 440px;
+  padding: 72px 28px 64px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,47 +29,73 @@ body {
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  background: #ddd;
-  border: 2px solid #222;
+  background: #f3d9c3;
+  border: 4px solid rgba(255, 255, 255, 0.85);
+  box-shadow:
+    0 12px 28px rgba(190, 110, 60, 0.22),
+    0 2px 6px rgba(190, 110, 60, 0.15);
 }
 
 .intro {
-  margin: 20px 0 32px;
+  margin: 28px 0 40px;
   text-align: center;
 }
 
 .name {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
 .bio {
-  margin-top: 6px;
+  margin-top: 10px;
   font-size: 0.95rem;
-  color: #555;
+  line-height: 1.6;
+  color: #8a766a;
+  word-break: keep-all;
 }
 
 .links {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 16px;
 }
 
 .link {
   display: block;
-  padding: 16px;
+  padding: 18px 20px;
   text-align: center;
   text-decoration: none;
-  color: #222;
-  background: #fff;
-  border: 2px solid #222;
-  border-radius: 12px;
-  transition: transform 0.15s, background 0.15s;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #3a2e28;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 20px;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 4px 18px rgba(190, 110, 60, 0.1);
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 .link:hover {
-  background: #222;
-  color: #fff;
+  background: rgba(255, 255, 255, 0.75);
   transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(190, 110, 60, 0.16);
+}
+
+.icon {
+  width: 1.1em;
+  height: 1.1em;
+  vertical-align: -0.15em;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 56px 24px 48px;
+  }
 }
