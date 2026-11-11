@@ -98,3 +98,18 @@ body {
     padding: 56px 24px 48px;
   }
 }
+
+.link {
+  position: relative;
+}
+
+.link-count {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #8a766a;
+  font-variant-numeric: tabular-nums;
+}
